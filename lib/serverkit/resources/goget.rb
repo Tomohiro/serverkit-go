@@ -12,7 +12,10 @@ module Serverkit
 
       # @note Override
       def check
-        Dir.exists?("#{ENV['GOPATH']}/src/#{url}")
+        go_package_dir_path = "#{ENV['GOPATH']}/src/#{url}"
+        check_command(
+          backend.command.get(:check_file_is_directory, go_package_dir_path)
+        )
       end
     end
   end
