@@ -12,7 +12,9 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Serverkit plug-in for Go package}
   spec.description   = %q{Serverkit plug-in for Go package}
   spec.homepage      = 'https://github.com/Tomohiro/serverkit-go'
+  spec.license       = 'MIT'
 
+  spec.files         = `git ls-files -z`.split("\x0")
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'serverkit', '~> 0.6.5'
