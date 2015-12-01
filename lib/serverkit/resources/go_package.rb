@@ -2,7 +2,7 @@ require 'serverkit/resources/base'
 
 module Serverkit
   module Resources
-    class Goget < Base
+    class GoPackage < Base
       attribute :url, required: true, type: String
 
       # @note Override
