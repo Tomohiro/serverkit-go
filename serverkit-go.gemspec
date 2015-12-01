@@ -5,7 +5,7 @@ require 'serverkit/go/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'serverkit-go'
-  spec.version       = Serverkit::go::VERSION
+  spec.version       = Serverkit::Go::VERSION
   spec.authors       = ['Tomohiro TAIRA']
   spec.email         = ['tomohiro.t@gmail.com']
 
